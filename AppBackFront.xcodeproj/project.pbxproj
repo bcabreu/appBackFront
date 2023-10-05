@@ -44,6 +44,9 @@
 		5B50D9BE2ACF087300D6BDE1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9BD2ACF087300D6BDE1 /* UIViewController+Extension.swift */; };
 		5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9BF2ACF0EB200D6BDE1 /* String+Extension.swift */; };
 		5B50D9C32ACF3F0900D6BDE1 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C22ACF3F0900D6BDE1 /* AlertController.swift */; };
+		5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */; };
+		5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */; };
+		5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		5B50D9BD2ACF087300D6BDE1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5B50D9BF2ACF0EB200D6BDE1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5B50D9C22ACF3F0900D6BDE1 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +124,10 @@
 		343B9D9B28D3A07C00956373 /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				5B50D9C72ACF458600D6BDE1 /* Feature */,
+				5B50D9C42ACF44C100D6BDE1 /* TabBarController */,
 				5B50D9C12ACF3EE600D6BDE1 /* Alert */,
 				5B50D9BB2ACF083F00D6BDE1 /* Utils */,
-				5B50D9802ACEFFA900D6BDE1 /* Login */,
 				343B9D9C28D3A07C00956373 /* AppDelegate.swift */,
 				343B9D9E28D3A07C00956373 /* SceneDelegate.swift */,
 				343B9DA528D3A07E00956373 /* Assets.xcassets */,
@@ -171,6 +178,40 @@
 				5B50D9C22ACF3F0900D6BDE1 /* AlertController.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		5B50D9C42ACF44C100D6BDE1 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		5B50D9C72ACF458600D6BDE1 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5B50D9C82ACF459A00D6BDE1 /* Home */,
+				5B50D9802ACEFFA900D6BDE1 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5B50D9C82ACF459A00D6BDE1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5B50D9CB2ACF45F600D6BDE1 /* Screen */,
+				5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5B50D9CB2ACF45F600D6BDE1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +320,12 @@
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
+				5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */,
 				5B50D9BE2ACF087300D6BDE1 /* UIViewController+Extension.swift in Sources */,
 				5B50D9C32ACF3F0900D6BDE1 /* AlertController.swift in Sources */,
+				5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */,
 				5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */,
+				5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */,
 				343B9D9F28D3A07C00956373 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
