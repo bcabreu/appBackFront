@@ -10,11 +10,13 @@ import FirebaseAuth
 
 class LoginVC: UIViewController {
     
-    var loginScreen: LoginScreen?
-    var auth: Auth?
+    private var loginScreen: LoginScreen?
+    private var auth: Auth?
+    private var alert: AlertController?
     
     override func loadView() {
         loginScreen = LoginScreen()
+        alert = AlertController(controller: self)
         view = loginScreen
     }
     
@@ -56,6 +58,9 @@ extension LoginVC: LoginScreenProtocols {
         auth?.signIn(withEmail: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "", completion: { user, error in
             if error != nil {
                 print(error?.localizedDescription ?? "")
+                self.alert?.getAlert(title: "Falha no login", message: "Usuário ou senha errados", completion: {
+                    print("Botão pressionado")
+                })
             } else {
                 print("Success")
             }
