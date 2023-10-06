@@ -43,6 +43,7 @@ class HomeScreen: UIView {
         collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         collectionView.setCollectionViewLayout(layout, animated: true)
         //        TO DO REGISTER
+        collectionView.register(NftFilterCollectionViewCell.self, forCellWithReuseIdentifier: NftFilterCollectionViewCell.identifier)
         
         return collectionView
     }()

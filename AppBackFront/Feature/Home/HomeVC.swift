@@ -25,9 +25,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         viewModel.fetchRequest(.request)
         viewModel.delegate(delegate: self)
-        homeScreen?.configSearchBarDelegate(delegate: self)
-        homeScreen?.configTableViewProtocols(delegate: self, dataSource: self)
-        homeScreen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+        
 
     }
     
@@ -36,6 +34,9 @@ class HomeVC: UIViewController {
 extension HomeVC: HomeViewModelDelegate {
     func success() {
         print(#function)
+        homeScreen?.configSearchBarDelegate(delegate: self)
+        homeScreen?.configTableViewProtocols(delegate: self, dataSource: self)
+        homeScreen?.configCollectionViewProtocols(delegate: self, dataSource: self)
     }
     
     func error() {
