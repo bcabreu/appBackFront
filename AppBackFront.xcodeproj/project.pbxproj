@@ -13,6 +13,12 @@
 		343B9DA628D3A07E00956373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B9DA528D3A07E00956373 /* Assets.xcassets */; };
 		343B9DA928D3A07E00956373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343B9DA728D3A07E00956373 /* LaunchScreen.storyboard */; };
 		343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B9DB028D3A48A00956373 /* LoginScreen.swift */; };
+		5B37651C2AD08F3D00619C8E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B37651B2AD08F3D00619C8E /* HomeViewModel.swift */; };
+		5B3765202AD08FD800619C8E /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B37651F2AD08FD800619C8E /* HomeService.swift */; };
+		5B3765222AD090BA00619C8E /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3765212AD090BA00619C8E /* GenericService.swift */; };
+		5B3765252AD0979B00619C8E /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B3765242AD0979B00619C8E /* HomeData.json */; };
+		5B3765272AD097B300619C8E /* WalletData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B3765262AD097B300619C8E /* WalletData.json */; };
+		5B37652A2AD0991A00619C8E /* NFTData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3765292AD0991A00619C8E /* NFTData.swift */; };
 		5B50D9832ACF04D400D6BDE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B50D9822ACF04D400D6BDE1 /* GoogleService-Info.plist */; };
 		5B50D9862ACF070600D6BDE1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5B50D9852ACF070600D6BDE1 /* FirebaseAnalytics */; };
 		5B50D9882ACF070600D6BDE1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5B50D9872ACF070600D6BDE1 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -61,6 +67,12 @@
 		343B9DA828D3A07E00956373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		343B9DAA28D3A07E00956373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343B9DB028D3A48A00956373 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		5B37651B2AD08F3D00619C8E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5B37651F2AD08FD800619C8E /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		5B3765212AD090BA00619C8E /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		5B3765242AD0979B00619C8E /* HomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		5B3765262AD097B300619C8E /* WalletData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WalletData.json; sourceTree = "<group>"; };
+		5B3765292AD0991A00619C8E /* NFTData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTData.swift; sourceTree = "<group>"; };
 		5B50D9822ACF04D400D6BDE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B50D9BD2ACF087300D6BDE1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5B50D9BF2ACF0EB200D6BDE1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -131,6 +143,9 @@
 		343B9D9B28D3A07C00956373 /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				5B3765282AD0990D00619C8E /* Model */,
+				5B3765232AD0971200619C8E /* Json */,
+				5B37651D2AD08F9100619C8E /* Service */,
 				5B50D9C72ACF458600D6BDE1 /* Feature */,
 				5B50D9C42ACF44C100D6BDE1 /* TabBarController */,
 				5B50D9C12ACF3EE600D6BDE1 /* Alert */,
@@ -151,8 +166,49 @@
 				18898C45860F2EE69277E743 /* Pods-AppBackFront.debug.xcconfig */,
 				30AF267A3F1CA728E92BC1DD /* Pods-AppBackFront.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B37651A2AD08F0500619C8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B37651B2AD08F3D00619C8E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B37651D2AD08F9100619C8E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B37651E2AD08FA800619C8E /* HomeService */,
+				5B3765212AD090BA00619C8E /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5B37651E2AD08FA800619C8E /* HomeService */ = {
+			isa = PBXGroup;
+			children = (
+				5B37651F2AD08FD800619C8E /* HomeService.swift */,
+			);
+			path = HomeService;
+			sourceTree = "<group>";
+		};
+		5B3765232AD0971200619C8E /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				5B3765242AD0979B00619C8E /* HomeData.json */,
+				5B3765262AD097B300619C8E /* WalletData.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		5B3765282AD0990D00619C8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B3765292AD0991A00619C8E /* NFTData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5B50D9802ACEFFA900D6BDE1 /* Login */ = {
@@ -217,6 +273,7 @@
 		5B50D9C82ACF459A00D6BDE1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5B37651A2AD08F0500619C8E /* ViewModel */,
 				5B50D9CB2ACF45F600D6BDE1 /* Screen */,
 				5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */,
 			);
@@ -331,6 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3765252AD0979B00619C8E /* HomeData.json in Resources */,
+				5B3765272AD097B300619C8E /* WalletData.json in Resources */,
 				343B9DA928D3A07E00956373 /* LaunchScreen.storyboard in Resources */,
 				343B9DA628D3A07E00956373 /* Assets.xcassets in Resources */,
 				5B50D9832ACF04D400D6BDE1 /* GoogleService-Info.plist in Resources */,
@@ -387,11 +446,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
+				5B37651C2AD08F3D00619C8E /* HomeViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
 				5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */,
 				5B50D9BE2ACF087300D6BDE1 /* UIViewController+Extension.swift in Sources */,
+				5B3765222AD090BA00619C8E /* GenericService.swift in Sources */,
+				5B3765202AD08FD800619C8E /* HomeService.swift in Sources */,
 				5B50D9C32ACF3F0900D6BDE1 /* AlertController.swift in Sources */,
+				5B37652A2AD0991A00619C8E /* NFTData.swift in Sources */,
 				5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */,
 				5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */,
 				5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */,
@@ -538,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGX2TTL6DJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppBackFront/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -570,6 +634,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGX2TTL6DJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppBackFront/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
