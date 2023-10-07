@@ -42,7 +42,7 @@ class HomeScreen: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         collectionView.setCollectionViewLayout(layout, animated: true)
-        //        TO DO REGISTER
+        //        TO DO REGISTER CELL
         collectionView.register(NftFilterCollectionViewCell.self, forCellWithReuseIdentifier: NftFilterCollectionViewCell.identifier)
         
         return collectionView
@@ -54,7 +54,8 @@ class HomeScreen: UIView {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         tableView.separatorStyle = .none
-        //        TO DO REGISTER
+        //        TO DO REGISTER CELL
+        tableView.register(NftTableViewCell.self, forCellReuseIdentifier: NftTableViewCell.identifier)
         return tableView
     }()
     

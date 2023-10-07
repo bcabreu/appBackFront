@@ -13,7 +13,7 @@ protocol HomeViewModelDelegate: AnyObject {
 }
 
 class HomeViewModel {
-
+    
     private var service: HomeService = HomeService()
     private var nftData: NFTData?
     
@@ -46,11 +46,11 @@ class HomeViewModel {
                 }
             }
         }
-
+        
         
     }
     
-//    MARK: - Filter CollectionView
+    //    MARK: - Filter CollectionView
     
     public var numberOfItemsInSection: Int {
         return nftData?.filterListNft?.count ?? 0
@@ -63,4 +63,20 @@ class HomeViewModel {
     public var sizeForItem: CGSize {
         return CGSize(width: 100, height: 34)
     }
+    
+    
+    //    MARK: - Filter TableView
+    
+    public var numberOfRowsInSection: Int {
+        return nftData?.nftList?.count ?? 0
+    }
+    
+    public func loadCurrentNft(indexPath: IndexPath) -> Nft {
+        return nftData?.nftList?[indexPath.row] ?? Nft()
+    }
+    
+    public var heightForRowAt: CGFloat {
+        return 360
+    }
 }
+

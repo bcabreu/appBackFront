@@ -34,9 +34,13 @@ class HomeVC: UIViewController {
 extension HomeVC: HomeViewModelDelegate {
     func success() {
         print(#function)
-        homeScreen?.configSearchBarDelegate(delegate: self)
-        homeScreen?.configTableViewProtocols(delegate: self, dataSource: self)
-        homeScreen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+        DispatchQueue.main.async {
+            self.homeScreen?.configSearchBarDelegate(delegate: self)
+            self.homeScreen?.configTableViewProtocols(delegate: self, dataSource: self)
+            self.homeScreen?.configCollectionViewProtocols(delegate: self, dataSource: self)
+            self.homeScreen?.tableView.reloadData()
+        }
+       
     }
     
     func error() {
@@ -51,12 +55,17 @@ extension HomeVC: UISearchBarDelegate {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: NftTableViewCell.identifier, for: indexPath) as? NftTableViewCell
+        cell?.setupCell(data: viewModel.loadCurrentNft(indexPath: indexPath))
+        return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.heightForRowAt
     }
 }
 
