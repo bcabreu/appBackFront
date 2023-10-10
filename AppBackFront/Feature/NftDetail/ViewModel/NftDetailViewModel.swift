@@ -24,6 +24,16 @@ class NftDetailViewModel {
         return nft.nftImage ?? ""
     }
     
+    public var nftId: Int {
+        return nft.nftID ?? 0
+    }
     
+    public var nftTitle: String {
+        return nft.nftNameImage ?? ""
+    }
+    
+    public var nftDescription: String {
+        return nft.nftDescription ?? ""
+    }
     
 }

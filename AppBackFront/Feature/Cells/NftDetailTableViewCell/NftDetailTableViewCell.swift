@@ -41,9 +41,14 @@ class NftDetailTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell(urlImage: String) {
-        guard let url: URL = URL(string: urlImage) else { return }
-        screen.nftImageView.af.setImage(withURL: url)
+    public func setupCell(urlImage: String, id: Int, title: String, description: String, delegate: NftDetailTableViewCellScreenDelegate) {
+        if let url: URL = URL(string: urlImage) {
+            screen.nftImageView.af.setImage(withURL: url)
+        }
+        screen.delegate(delegate: delegate)
+        screen.idLabel.text = "ID: \(id)"
+        screen.titleLabel.text = title
+        screen.descriptionLabel.text = description
     }
     
     

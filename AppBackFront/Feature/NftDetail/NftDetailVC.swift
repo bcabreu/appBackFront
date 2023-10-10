@@ -44,12 +44,24 @@ extension NftDetailVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NftDetailTableViewCell.identifier, for: indexPath) as? NftDetailTableViewCell
-        cell?.setupCell(urlImage: viewModel?.nftImage ?? "")
+        cell?.setupCell(urlImage: viewModel?.nftImage ?? "", id: viewModel?.nftId ?? 0, title: viewModel?.nftTitle ?? "", description: viewModel?.nftDescription ?? "", delegate: self)
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
+    }
+    
+    
+}
+
+extension NftDetailVC: NftDetailTableViewCellScreenDelegate {
+    func tappedCloseButton() {
+        dismiss(animated: true)
+    }
+    
+    func tappedMagnifyingGlassButton() {
+        print(#function)
     }
     
     
