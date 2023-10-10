@@ -50,6 +50,14 @@ extension HomeVC: HomeViewModelDelegate {
 }
 
 extension HomeVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterSearchText(searchText)
+        homeScreen?.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print(searchBar)
+    }
     
 }
 
