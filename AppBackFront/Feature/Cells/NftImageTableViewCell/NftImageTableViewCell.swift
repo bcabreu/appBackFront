@@ -8,12 +8,12 @@
 import UIKit
 import AlamofireImage
 
-class NftDetailTableViewCell: UITableViewCell {
+class NftImageTableViewCell: UITableViewCell {
     
-    static let identifier: String = String(describing: NftDetailTableViewCell.self)
+    static let identifier: String = String(describing: NftImageTableViewCell.self)
 
-    private lazy var screen: NftDetailTableViewCellScreen = {
-        let view = NftDetailTableViewCellScreen()
+    private lazy var screen: NftImageTableViewCellScreen = {
+        let view = NftImageTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -41,14 +41,11 @@ class NftDetailTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell(urlImage: String, id: Int, title: String, description: String, delegate: NftDetailTableViewCellScreenDelegate) {
+    public func setupCell(urlImage: String, delegate: NftImageTableViewCellScreenDelegate) {
         if let url: URL = URL(string: urlImage) {
             screen.nftImageView.af.setImage(withURL: url)
         }
         screen.delegate(delegate: delegate)
-        screen.idLabel.text = "ID: \(id)"
-        screen.titleLabel.text = title
-        screen.descriptionLabel.text = description
     }
     
     
