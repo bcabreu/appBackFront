@@ -62,6 +62,9 @@
 		5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */; };
 		5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */; };
 		5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */; };
+		5BA5CC732AD6EB0D00978114 /* LastestDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */; };
+		5BA5CC762AD6EB5900978114 /* LastestDealTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */; };
+		5BA5CC792AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */; };
 		5BD63B792AD1B7D8009D9B75 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */; };
 		5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */; };
 		D5BBE618F89850A59E8B8CD8 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */; };
@@ -100,6 +103,9 @@
 		5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCell.swift; sourceTree = "<group>"; };
+		5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +302,7 @@
 		5B37652B2AD0B0FD00619C8E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */,
 				5B0785A52AD5E461001E5466 /* NftDescriptionTableViewCell */,
 				5B07859F2AD597BC001E5466 /* NftImageTableViewCell */,
 				5BD63B762AD1B760009D9B75 /* NftTableViewCell */,
@@ -398,6 +405,32 @@
 				5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC772AD6F4F300978114 /* LastestDealTableViewCellViewModel */,
+				5BA5CC742AD6EB4000978114 /* Screen */,
+				5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */,
+			);
+			path = LastestDealTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BA5CC742AD6EB4000978114 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BA5CC772AD6F4F300978114 /* LastestDealTableViewCellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */,
+			);
+			path = LastestDealTableViewCellViewModel;
 			sourceTree = "<group>";
 		};
 		5BD63B762AD1B760009D9B75 /* NftTableViewCell */ = {
@@ -574,6 +607,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA5CC762AD6EB5900978114 /* LastestDealTableViewCellScreen.swift in Sources */,
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				5B37651C2AD08F3D00619C8E /* HomeViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
@@ -592,12 +626,14 @@
 				5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */,
 				5B07859E2AD58C67001E5466 /* NftDetailViewModel.swift in Sources */,
 				5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */,
+				5BA5CC792AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift in Sources */,
 				5B0785A92AD5E4D6001E5466 /* NftDescriptionTableViewCell.swift in Sources */,
 				5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */,
 				5B0785A12AD5980B001E5466 /* NftImageTableViewCell.swift in Sources */,
 				5B07859A2AD58B61001E5466 /* NftDetailVC.swift in Sources */,
 				343B9D9F28D3A07C00956373 /* SceneDelegate.swift in Sources */,
 				5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */,
+				5BA5CC732AD6EB0D00978114 /* LastestDealTableViewCell.swift in Sources */,
 				5BD63B792AD1B7D8009D9B75 /* NftTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
