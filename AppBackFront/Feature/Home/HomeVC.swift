@@ -50,7 +50,10 @@ extension HomeVC: HomeViewModelDelegate {
 }
 
 extension HomeVC: UISearchBarDelegate {
-    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterSearchText(searchText)
+        homeScreen?.tableView.reloadData()
+    }
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -67,6 +70,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return viewModel.heightForRowAt
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nftDetail = NftDetailVC(nft: viewModel.loadCurrentNft(indexPath: indexPath))
+        present(nftDetail, animated: true)
+    }
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -82,5 +90,15 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return viewModel.sizeForItem
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.setFilter(indexPath: indexPath, searchText: homeScreen?.searchBar.text ?? "")
+        homeScreen?.collectionView.reloadData()
+        homeScreen?.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        homeScreen?.tableView.reloadData()
+        if viewModel.numberOfRowsInSection > 0 {
+            homeScreen?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
     }
 }
