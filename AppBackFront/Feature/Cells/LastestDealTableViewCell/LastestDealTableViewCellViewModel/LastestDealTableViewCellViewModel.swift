@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum HeightLastestDeal: CGFloat {
+    case height = 70
+}
+
 class LastestDealTableViewCellViewModel {
 
     private var nft: Nft?
@@ -14,7 +18,6 @@ class LastestDealTableViewCellViewModel {
     public func setNft(To nft: Nft) {
         self.nft = nft
     }
-
     
     public var title: String {
         return nft?.titleLatestDeals ?? ""
@@ -25,6 +28,18 @@ class LastestDealTableViewCellViewModel {
     }
     
     public var heightForRowAt: CGFloat {
-        return 70
+        return HeightLastestDeal.height.rawValue
+    }
+    
+    public func loadCurrentLatestDeal(indexPath: IndexPath) -> LatestDeal {
+        return nft?.latestDeals?[indexPath.row] ?? LatestDeal()
+    }
+    
+    public func isInicial(indexPath: IndexPath) -> Bool {
+        return indexPath.row == 0
+    }
+    
+    public func isFinal(indexPath: IndexPath) -> Bool {
+        return indexPath.row == numberOfRowsInSection - 1
     }
 }

@@ -50,7 +50,7 @@ class NftDetailViewModel {
             return totalLabel + 90
             
         case .lastestDeal:
-            return 400
+            return HeightLastestDeal.height.rawValue * CGFloat(nft.latestDeals?.count ?? 0) + 75
             
         default:
             return 0
