@@ -77,6 +77,11 @@
 		5BABFCE32AD99A54002718C0 /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE22AD99A54002718C0 /* WalletData.swift */; };
 		5BABFCE72AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */; };
 		5BABFCE92AD9A660002718C0 /* QuotationEthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE82AD9A660002718C0 /* QuotationEthTableViewCell.swift */; };
+		5BABFCED2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */; };
+		5BABFCEF2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */; };
+		5BABFCF22AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */; };
+		5BABFCF52AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */; };
+		5BABFCF82AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */; };
 		5BD63B792AD1B7D8009D9B75 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */; };
 		5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */; };
 		D5BBE618F89850A59E8B8CD8 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */; };
@@ -130,6 +135,11 @@
 		5BABFCE22AD99A54002718C0 /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
 		5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCellScreen.swift; sourceTree = "<group>"; };
 		5BABFCE82AD9A660002718C0 /* QuotationEthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCellScreen.swift; sourceTree = "<group>"; };
 		5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,6 +338,8 @@
 		5B37652B2AD0B0FD00619C8E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5BABFCF32AD9D1AC002718C0 /* ListOfTransactionTableViewCell */,
+				5BABFCEA2AD9C507002718C0 /* LatestTransactionsTableViewCell */,
 				5BABFCE42AD9A5DE002718C0 /* QuotationEthTableViewCell */,
 				5BA917D42AD71B59005CC413 /* ListOffersTableViewCell */,
 				5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */,
@@ -441,7 +453,7 @@
 		5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				5BA5CC772AD6F4F300978114 /* LastestDealTableViewCellViewModel */,
+				5BA5CC772AD6F4F300978114 /* ViewModel */,
 				5BA5CC742AD6EB4000978114 /* Screen */,
 				5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */,
 			);
@@ -456,12 +468,12 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
-		5BA5CC772AD6F4F300978114 /* LastestDealTableViewCellViewModel */ = {
+		5BA5CC772AD6F4F300978114 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */,
 			);
-			path = LastestDealTableViewCellViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5BA917D42AD71B59005CC413 /* ListOffersTableViewCell */ = {
@@ -545,6 +557,49 @@
 			isa = PBXGroup;
 			children = (
 				5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BABFCEA2AD9C507002718C0 /* LatestTransactionsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF02AD9CE14002718C0 /* ViewModel */,
+				5BABFCEB2AD9C525002718C0 /* Screen */,
+				5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */,
+			);
+			path = LatestTransactionsTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BABFCEB2AD9C525002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BABFCF02AD9CE14002718C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BABFCF32AD9D1AC002718C0 /* ListOfTransactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF62AD9D1DA002718C0 /* Screen */,
+				5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */,
+			);
+			path = ListOfTransactionTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BABFCF62AD9D1DA002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -724,15 +779,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA5CC762AD6EB5900978114 /* LastestDealTableViewCellScreen.swift in Sources */,
+				5BABFCEF2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift in Sources */,
 				5BA917D72AD71B99005CC413 /* ListOffersTableViewCellScreen.swift in Sources */,
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				5B37651C2AD08F3D00619C8E /* HomeViewModel.swift in Sources */,
 				5BABFCE92AD9A660002718C0 /* QuotationEthTableViewCell.swift in Sources */,
+				5BABFCF22AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
 				5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */,
+				5BABFCED2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift in Sources */,
 				5B50D9BE2ACF087300D6BDE1 /* UIViewController+Extension.swift in Sources */,
 				5BA917D92AD71BB8005CC413 /* ListOffersTableViewCell.swift in Sources */,
+				5BABFCF52AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift in Sources */,
 				5B37652E2AD0B14300619C8E /* NftFilterCollectionViewCell.swift in Sources */,
 				5B3765222AD090BA00619C8E /* GenericService.swift in Sources */,
 				5B0785AB2AD5E4EE001E5466 /* NftDescriptionTableViewCellScreen.swift in Sources */,
@@ -746,6 +805,7 @@
 				5B3765312AD0B1B800619C8E /* NftFilterCollectionViewScreen.swift in Sources */,
 				5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */,
 				5B07859E2AD58C67001E5466 /* NftDetailViewModel.swift in Sources */,
+				5BABFCF82AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift in Sources */,
 				5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */,
 				5BA917DB2AD73354005CC413 /* UIView + Extension.swift in Sources */,
 				5BABFCD82AD98F42002718C0 /* WalletVC.swift in Sources */,

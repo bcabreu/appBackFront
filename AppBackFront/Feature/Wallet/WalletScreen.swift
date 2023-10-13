@@ -16,6 +16,7 @@ class WalletScreen: UIView {
         tableView.separatorStyle = .none
         //        TO DO REGISTER
         tableView.register(QuotationEthTableViewCell.self, forCellReuseIdentifier: QuotationEthTableViewCell.identifier)
+        tableView.register(LatestTransactionsTableViewCell.self, forCellReuseIdentifier: LatestTransactionsTableViewCell.identifier)
         return tableView
     }()
     
