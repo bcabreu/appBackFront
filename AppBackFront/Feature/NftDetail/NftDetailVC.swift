@@ -10,6 +10,7 @@ import UIKit
 enum NameCellNftDetail: Int {
     case nftImage = 0
     case description = 1
+    case lastestDeal = 2
 }
 
 class NftDetailVC: UIViewController {
@@ -60,6 +61,14 @@ extension NftDetailVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: NftDescriptionTableViewCell.identifier, for: indexPath) as? NftDescriptionTableViewCell
             cell?.setupCell(id: viewModel?.nftId ?? 0, title: viewModel?.nftTitle ?? "", description: viewModel?.nftDescription ?? "")
             return cell ?? UITableViewCell()
+            
+        case .lastestDeal:
+            let cell = tableView.dequeueReusableCell(withIdentifier: LastestDealTableViewCell.identifier, for: indexPath) as? LastestDealTableViewCell
+            if let nftData = viewModel?.getNft {
+                cell?.setupCell(data: nftData)
+            }
+            return cell ?? UITableViewCell()
+            
         default:
             return UITableViewCell()
         }
@@ -80,7 +89,8 @@ extension NftDetailVC: NftImageTableViewCellScreenDelegate {
     }
     
     func tappedMagnifyingGlassButton() {
-        print(#function)
+        let vc: MagnifyingGlassVC = MagnifyingGlassVC(urlImage: viewModel?.nftImage ?? "")
+        present(vc, animated: true)
     }
     
     

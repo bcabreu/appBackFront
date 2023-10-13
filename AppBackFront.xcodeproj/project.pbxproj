@@ -62,6 +62,26 @@
 		5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */; };
 		5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */; };
 		5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */; };
+		5BA5CC732AD6EB0D00978114 /* LastestDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */; };
+		5BA5CC762AD6EB5900978114 /* LastestDealTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */; };
+		5BA5CC792AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */; };
+		5BA917D72AD71B99005CC413 /* ListOffersTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA917D62AD71B99005CC413 /* ListOffersTableViewCellScreen.swift */; };
+		5BA917D92AD71BB8005CC413 /* ListOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA917D82AD71BB8005CC413 /* ListOffersTableViewCell.swift */; };
+		5BA917DB2AD73354005CC413 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA917DA2AD73354005CC413 /* UIView + Extension.swift */; };
+		5BA917DF2AD7422F005CC413 /* MagnifyingGlassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA917DE2AD7422F005CC413 /* MagnifyingGlassVC.swift */; };
+		5BA917E12AD74255005CC413 /* MagnifyingGlassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA917E02AD74255005CC413 /* MagnifyingGlassScreen.swift */; };
+		5BABFCD82AD98F42002718C0 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCD72AD98F42002718C0 /* WalletVC.swift */; };
+		5BABFCDB2AD98F6B002718C0 /* WalletScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCDA2AD98F6B002718C0 /* WalletScreen.swift */; };
+		5BABFCDE2AD99271002718C0 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCDD2AD99270002718C0 /* WalletViewModel.swift */; };
+		5BABFCE12AD992B5002718C0 /* WalletServive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE02AD992B5002718C0 /* WalletServive.swift */; };
+		5BABFCE32AD99A54002718C0 /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE22AD99A54002718C0 /* WalletData.swift */; };
+		5BABFCE72AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */; };
+		5BABFCE92AD9A660002718C0 /* QuotationEthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCE82AD9A660002718C0 /* QuotationEthTableViewCell.swift */; };
+		5BABFCED2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */; };
+		5BABFCEF2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */; };
+		5BABFCF22AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */; };
+		5BABFCF52AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */; };
+		5BABFCF82AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */; };
 		5BD63B792AD1B7D8009D9B75 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */; };
 		5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */; };
 		D5BBE618F89850A59E8B8CD8 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */; };
@@ -100,6 +120,26 @@
 		5B50D9C52ACF44F000D6BDE1 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		5B50D9C92ACF45F000D6BDE1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCell.swift; sourceTree = "<group>"; };
+		5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		5BA917D62AD71B99005CC413 /* ListOffersTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOffersTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BA917D82AD71BB8005CC413 /* ListOffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOffersTableViewCell.swift; sourceTree = "<group>"; };
+		5BA917DA2AD73354005CC413 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		5BA917DE2AD7422F005CC413 /* MagnifyingGlassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassVC.swift; sourceTree = "<group>"; };
+		5BA917E02AD74255005CC413 /* MagnifyingGlassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassScreen.swift; sourceTree = "<group>"; };
+		5BABFCD72AD98F42002718C0 /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
+		5BABFCDA2AD98F6B002718C0 /* WalletScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletScreen.swift; sourceTree = "<group>"; };
+		5BABFCDD2AD99270002718C0 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		5BABFCE02AD992B5002718C0 /* WalletServive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletServive.swift; sourceTree = "<group>"; };
+		5BABFCE22AD99A54002718C0 /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
+		5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BABFCE82AD9A660002718C0 /* QuotationEthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionsTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCellScreen.swift; sourceTree = "<group>"; };
 		5BD63B782AD1B7D8009D9B75 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 		5BD63B7A2AD1B808009D9B75 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +302,7 @@
 		5B37651D2AD08F9100619C8E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				5BABFCDF2AD992A3002718C0 /* WalletServive */,
 				5B37651E2AD08FA800619C8E /* HomeService */,
 				5B3765212AD090BA00619C8E /* GenericService.swift */,
 			);
@@ -289,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				5B3765292AD0991A00619C8E /* NFTData.swift */,
+				5BABFCE22AD99A54002718C0 /* WalletData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +338,11 @@
 		5B37652B2AD0B0FD00619C8E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5BABFCF32AD9D1AC002718C0 /* ListOfTransactionTableViewCell */,
+				5BABFCEA2AD9C507002718C0 /* LatestTransactionsTableViewCell */,
+				5BABFCE42AD9A5DE002718C0 /* QuotationEthTableViewCell */,
+				5BA917D42AD71B59005CC413 /* ListOffersTableViewCell */,
+				5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */,
 				5B0785A52AD5E461001E5466 /* NftDescriptionTableViewCell */,
 				5B07859F2AD597BC001E5466 /* NftImageTableViewCell */,
 				5BD63B762AD1B760009D9B75 /* NftTableViewCell */,
@@ -351,6 +398,7 @@
 			children = (
 				5B50D9BD2ACF087300D6BDE1 /* UIViewController+Extension.swift */,
 				5B50D9BF2ACF0EB200D6BDE1 /* String+Extension.swift */,
+				5BA917DA2AD73354005CC413 /* UIView + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -374,6 +422,8 @@
 		5B50D9C72ACF458600D6BDE1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				5BABFCD62AD98F2B002718C0 /* Wallet */,
+				5BA917DC2AD741E8005CC413 /* MagnifyingGlass */,
 				5B0785962AD58B16001E5466 /* NftDetail */,
 				5B37652B2AD0B0FD00619C8E /* Cells */,
 				5B50D9C82ACF459A00D6BDE1 /* Home */,
@@ -396,6 +446,160 @@
 			isa = PBXGroup;
 			children = (
 				5B50D9CC2ACF461400D6BDE1 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BA5CC712AD6EAB900978114 /* LastestDealTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC772AD6F4F300978114 /* ViewModel */,
+				5BA5CC742AD6EB4000978114 /* Screen */,
+				5BA5CC722AD6EB0D00978114 /* LastestDealTableViewCell.swift */,
+			);
+			path = LastestDealTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BA5CC742AD6EB4000978114 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC752AD6EB5900978114 /* LastestDealTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BA5CC772AD6F4F300978114 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5CC782AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BA917D42AD71B59005CC413 /* ListOffersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BA917D52AD71B85005CC413 /* Screen */,
+				5BA917D82AD71BB8005CC413 /* ListOffersTableViewCell.swift */,
+			);
+			path = ListOffersTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BA917D52AD71B85005CC413 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BA917D62AD71B99005CC413 /* ListOffersTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BA917DC2AD741E8005CC413 /* MagnifyingGlass */ = {
+			isa = PBXGroup;
+			children = (
+				5BA917DD2AD74204005CC413 /* screen */,
+				5BA917DE2AD7422F005CC413 /* MagnifyingGlassVC.swift */,
+			);
+			path = MagnifyingGlass;
+			sourceTree = "<group>";
+		};
+		5BA917DD2AD74204005CC413 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BA917E02AD74255005CC413 /* MagnifyingGlassScreen.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		5BABFCD62AD98F2B002718C0 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCDC2AD9924D002718C0 /* ViewModel */,
+				5BABFCD92AD98F46002718C0 /* Screen */,
+				5BABFCD72AD98F42002718C0 /* WalletVC.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		5BABFCD92AD98F46002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCDA2AD98F6B002718C0 /* WalletScreen.swift */,
+			);
+			name = Screen;
+			sourceTree = "<group>";
+		};
+		5BABFCDC2AD9924D002718C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCDD2AD99270002718C0 /* WalletViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BABFCDF2AD992A3002718C0 /* WalletServive */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCE02AD992B5002718C0 /* WalletServive.swift */,
+			);
+			path = WalletServive;
+			sourceTree = "<group>";
+		};
+		5BABFCE42AD9A5DE002718C0 /* QuotationEthTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCE52AD9A613002718C0 /* Screen */,
+				5BABFCE82AD9A660002718C0 /* QuotationEthTableViewCell.swift */,
+			);
+			path = QuotationEthTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BABFCE52AD9A613002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCE62AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BABFCEA2AD9C507002718C0 /* LatestTransactionsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF02AD9CE14002718C0 /* ViewModel */,
+				5BABFCEB2AD9C525002718C0 /* Screen */,
+				5BABFCEC2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift */,
+			);
+			path = LatestTransactionsTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BABFCEB2AD9C525002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCEE2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5BABFCF02AD9CE14002718C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF12AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BABFCF32AD9D1AC002718C0 /* ListOfTransactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF62AD9D1DA002718C0 /* Screen */,
+				5BABFCF42AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift */,
+			);
+			path = ListOfTransactionTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BABFCF62AD9D1DA002718C0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BABFCF72AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -574,30 +778,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA5CC762AD6EB5900978114 /* LastestDealTableViewCellScreen.swift in Sources */,
+				5BABFCEF2AD9C54E002718C0 /* LatestTransactionsTableViewCellScreen.swift in Sources */,
+				5BA917D72AD71B99005CC413 /* ListOffersTableViewCellScreen.swift in Sources */,
 				343B9DA128D3A07C00956373 /* LoginVC.swift in Sources */,
 				5B37651C2AD08F3D00619C8E /* HomeViewModel.swift in Sources */,
+				5BABFCE92AD9A660002718C0 /* QuotationEthTableViewCell.swift in Sources */,
+				5BABFCF22AD9CE5D002718C0 /* LatestTransactionsTableViewCellViewModel.swift in Sources */,
 				343B9DB128D3A48A00956373 /* LoginScreen.swift in Sources */,
 				343B9D9D28D3A07C00956373 /* AppDelegate.swift in Sources */,
 				5B50D9CA2ACF45F000D6BDE1 /* HomeVC.swift in Sources */,
+				5BABFCED2AD9C533002718C0 /* LatestTransactionsTableViewCell.swift in Sources */,
 				5B50D9BE2ACF087300D6BDE1 /* UIViewController+Extension.swift in Sources */,
+				5BA917D92AD71BB8005CC413 /* ListOffersTableViewCell.swift in Sources */,
+				5BABFCF52AD9D1D5002718C0 /* ListOfTransactionTableViewCell.swift in Sources */,
 				5B37652E2AD0B14300619C8E /* NftFilterCollectionViewCell.swift in Sources */,
 				5B3765222AD090BA00619C8E /* GenericService.swift in Sources */,
 				5B0785AB2AD5E4EE001E5466 /* NftDescriptionTableViewCellScreen.swift in Sources */,
 				5B3765202AD08FD800619C8E /* HomeService.swift in Sources */,
+				5BABFCDB2AD98F6B002718C0 /* WalletScreen.swift in Sources */,
 				5B0785982AD58B44001E5466 /* NftDetailScreen.swift in Sources */,
 				5B50D9C32ACF3F0900D6BDE1 /* AlertController.swift in Sources */,
+				5BABFCE32AD99A54002718C0 /* WalletData.swift in Sources */,
 				5B0785A42AD59853001E5466 /* NftImageTableViewCellScreen.swift in Sources */,
 				5B37652A2AD0991A00619C8E /* NFTData.swift in Sources */,
 				5B3765312AD0B1B800619C8E /* NftFilterCollectionViewScreen.swift in Sources */,
 				5B50D9CD2ACF461400D6BDE1 /* HomeScreen.swift in Sources */,
 				5B07859E2AD58C67001E5466 /* NftDetailViewModel.swift in Sources */,
+				5BABFCF82AD9D1E9002718C0 /* ListOfTransactionTableViewCellScreen.swift in Sources */,
 				5B50D9C02ACF0EB200D6BDE1 /* String+Extension.swift in Sources */,
+				5BA917DB2AD73354005CC413 /* UIView + Extension.swift in Sources */,
+				5BABFCD82AD98F42002718C0 /* WalletVC.swift in Sources */,
+				5BA5CC792AD6F52C00978114 /* LastestDealTableViewCellViewModel.swift in Sources */,
+				5BABFCE12AD992B5002718C0 /* WalletServive.swift in Sources */,
 				5B0785A92AD5E4D6001E5466 /* NftDescriptionTableViewCell.swift in Sources */,
 				5B50D9C62ACF44F000D6BDE1 /* TabBarVC.swift in Sources */,
+				5BABFCE72AD9A64C002718C0 /* QuotationEthTableViewCellScreen.swift in Sources */,
 				5B0785A12AD5980B001E5466 /* NftImageTableViewCell.swift in Sources */,
+				5BA917E12AD74255005CC413 /* MagnifyingGlassScreen.swift in Sources */,
 				5B07859A2AD58B61001E5466 /* NftDetailVC.swift in Sources */,
+				5BA917DF2AD7422F005CC413 /* MagnifyingGlassVC.swift in Sources */,
 				343B9D9F28D3A07C00956373 /* SceneDelegate.swift in Sources */,
 				5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */,
+				5BABFCDE2AD99271002718C0 /* WalletViewModel.swift in Sources */,
+				5BA5CC732AD6EB0D00978114 /* LastestDealTableViewCell.swift in Sources */,
 				5BD63B792AD1B7D8009D9B75 /* NftTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
