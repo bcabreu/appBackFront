@@ -63,6 +63,9 @@ extension LoginVC: LoginScreenProtocols {
                 })
             } else {
                 print("Success")
+                let nav = UINavigationController(rootViewController: HomeVC())
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true)
             }
         })
     }
