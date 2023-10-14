@@ -16,6 +16,8 @@ class ProfileScreen: UIView {
         tableView.separatorStyle = .none
         //        TO DO REGISTER
         tableView.register(ProfileImageTableViewCell.self, forCellReuseIdentifier: ProfileImageTableViewCell.identifier)
+        
+        tableView.register(ProfileTableViewCell.self, forCellReuseIdentifier: ProfileTableViewCell.identifier)
         return tableView
     }()
     

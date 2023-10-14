@@ -89,6 +89,8 @@
 		5BFDADCC2ADAE99000C4CC49 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDADCB2ADAE99000C4CC49 /* ProfileVC.swift */; };
 		5BFDADD02ADAEABE00C4CC49 /* ProfileImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDADCF2ADAEABD00C4CC49 /* ProfileImageTableViewCell.swift */; };
 		5BFDADD22ADAEADE00C4CC49 /* ProfileImageTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDADD12ADAEADE00C4CC49 /* ProfileImageTableViewCellScreen.swift */; };
+		5BFDADD52ADAF2D800C4CC49 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDADD42ADAF2D800C4CC49 /* ProfileTableViewCell.swift */; };
+		5BFDADD82ADAF2F600C4CC49 /* ProfileTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDADD72ADAF2F600C4CC49 /* ProfileTableViewCellScreen.swift */; };
 		D5BBE618F89850A59E8B8CD8 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +154,8 @@
 		5BFDADCB2ADAE99000C4CC49 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		5BFDADCF2ADAEABD00C4CC49 /* ProfileImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTableViewCell.swift; sourceTree = "<group>"; };
 		5BFDADD12ADAEADE00C4CC49 /* ProfileImageTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTableViewCellScreen.swift; sourceTree = "<group>"; };
+		5BFDADD42ADAF2D800C4CC49 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		5BFDADD72ADAF2F600C4CC49 /* ProfileTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCellScreen.swift; sourceTree = "<group>"; };
 		D103809B2D85120B50DDC566 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -348,6 +352,7 @@
 		5B37652B2AD0B0FD00619C8E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5BFDADD32ADAF2A500C4CC49 /* ProfileTableViewCell */,
 				5BFDADCD2ADAEA7600C4CC49 /* ProfileImageTableViewCell */,
 				5BABFCF32AD9D1AC002718C0 /* ListOfTransactionTableViewCell */,
 				5BABFCEA2AD9C507002718C0 /* LatestTransactionsTableViewCell */,
@@ -676,6 +681,23 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		5BFDADD32ADAF2A500C4CC49 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BFDADD62ADAF2E100C4CC49 /* Screen */,
+				5BFDADD42ADAF2D800C4CC49 /* ProfileTableViewCell.swift */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		5BFDADD62ADAF2E100C4CC49 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5BFDADD72ADAF2F600C4CC49 /* ProfileTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		C2E1DAB722C3EF6D79EFAEDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -851,6 +873,7 @@
 				5B3765222AD090BA00619C8E /* GenericService.swift in Sources */,
 				5B0785AB2AD5E4EE001E5466 /* NftDescriptionTableViewCellScreen.swift in Sources */,
 				5B3765202AD08FD800619C8E /* HomeService.swift in Sources */,
+				5BFDADD82ADAF2F600C4CC49 /* ProfileTableViewCellScreen.swift in Sources */,
 				5BABFCDB2AD98F6B002718C0 /* WalletScreen.swift in Sources */,
 				5BFDADD22ADAEADE00C4CC49 /* ProfileImageTableViewCellScreen.swift in Sources */,
 				5B0785982AD58B44001E5466 /* NftDetailScreen.swift in Sources */,
@@ -878,6 +901,7 @@
 				5BFDADCA2ADAE80F00C4CC49 /* ProfileScreen.swift in Sources */,
 				5B07859A2AD58B61001E5466 /* NftDetailVC.swift in Sources */,
 				5BA917DF2AD7422F005CC413 /* MagnifyingGlassVC.swift in Sources */,
+				5BFDADD52ADAF2D800C4CC49 /* ProfileTableViewCell.swift in Sources */,
 				343B9D9F28D3A07C00956373 /* SceneDelegate.swift in Sources */,
 				5BD63B7B2AD1B808009D9B75 /* NftTableViewCellScreen.swift in Sources */,
 				5BABFCDE2AD99271002718C0 /* WalletViewModel.swift in Sources */,
